@@ -6,7 +6,7 @@
     <div>
         <ul class="flex text-xl space-x-4  lg:space-x-8">
             <input type="text" placeholder="Search for Products, Brands and More" class="rounded-l-md p-2 text-md md:text-sm lg:text-md hidden sm:hidden md:block lg:block md:w-[400px] lg:w-[600px] bg-blue-100">
-            <div class="flex">
+            <div class="flex" onclick="location.href='{{route('login')}}'">
                 <img width="40px" height="40px" src="{{ asset('images/login img.png') }}" class=" p-2 rounded-lg" alt="loginimg">
                 <p class="flex justify-center items-center">Login</p>
             </div>
