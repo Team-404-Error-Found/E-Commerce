@@ -11,12 +11,12 @@
 <body class="bg-gray-100">
 <header class="flex justify-between items-center p-4">
     <div class="flex">
-        <img src="{{ asset('images/menu.png') }}" width="30px" height="30px" alt="menu">
+{{--        <img src="{{ asset('images/menu.png') }}" width="30px" height="30px" alt="menu">--}}
         <h2 class="ml-2 lg:text-xl">Flipkart Clone</h2>
     </div>
     <div>
         <ul class="flex text-xl space-x-4  lg:space-x-8">
-            <input type="text" placeholder="Search Product" class="rounded-full p-2 text-md lg:text-lg hidden sm:hidden md:block lg:block md:w-80 lg:w-[700px]">
+            <input type="text" placeholder="Search Product" class="rounded-full p-2 text-md lg:text-lg hidden sm:hidden md:block lg:block md:w-80 lg:w-[700px] bg-blue-100">
 
             <div class="flex">
                 <img width="40px" height="40px" src="{{asset('images/login img.png')}}" class=" p-2 rounded-lg" alt="loginimg">
