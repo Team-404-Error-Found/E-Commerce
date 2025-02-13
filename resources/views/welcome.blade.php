@@ -204,11 +204,11 @@
             </div>
             <div>
                 <p class="font-bold">REGISTERED OFFICE ADDRESS</p>
-                <p class="mt-3">Flipkart Internet Private Limited Buildings Alyssa, Begonia & Clove Embassy Tech Village Outer Ring Road, Devarabeesanahalli Village Bengaluru, 560103 Karnataka, India CIN:U51109KA2012PTCO66107 Telephone: 044-45614700/044-67415800</p>
+                <p class="mt-3">Flipkart Internet Private Limited Buildings Alyssa, Begonia & Clove Embassy Tech Village Outer Ring Road, Devarabeesanahalli Village Bengaluru, 560103 Karnataka, India Telephone: 044-45614700/044-67415800</p>
             </div>
         </div>
         <hr class="my-4"/>
-        <div class="block md:flex justify-content-center text-sm gap-x-2">
+        <div class="block lg:flex justify-content-center text-sm gap-x-2">
             <div class="flex my-2 gap-x-3">
                 <img src="{{asset('images/best-seller.png')}}" width="20px" height="20px">
                 <p class="flex items-center">Become a Seller</p>
