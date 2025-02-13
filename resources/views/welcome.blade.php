@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>E-Commerce</title>
-        @vite('resources/css/app.css')
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        @vite(['resources/css/app.css'])
     </head>
     <body>
     <header class="flex justify-between items-center p-4">
@@ -30,7 +32,8 @@
             </ul>
         </div>
     </header>
-    <div class="w-max-full overflow-x-auto scrollbar-hide">
+{{--    Categories list--}}
+    <div class="w-max-full overflow-x-auto scrollbar-hide flex justify-center">
         <div class="grid grid-flow-col auto-cols-min place-items-center gap-2 mt-4 overflow-auto">
             <div class="min-w-[150px]">
                 <img width="50px" height="50px" class="block mx-auto" src="{{ asset('images/kilos.png') }}" alt="kilos img">
@@ -70,6 +73,41 @@
             </div>
         </div>
     </div>
+{{--    Slider for Home page adverthisment--}}
+    <div id="carouselExampleAutoplaying" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{asset('images/img.webp')}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('images/img2.webp')}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('images/img.webp')}}" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div>
+        <h1 class="text-2xl font-bold m-2">Best of Electronics</h1>
+        <div class="flex gap-3 w-full overflow-x-auto mx-2">
+            <div class="sm:flex sm:w-max w-[150px] border-b-2 border-black rounded-2 flex-none">
+                <img src="{{asset('images/camera.png')}}" width="150px" height="150px" class="sm:w-[70px]">
+                <div>
+                    <p class="text-center">Name</p>
+                    <p class="text-center"><b>Price</b></p>
+                </div>
+            </div>
 
+        </div>
+
+    </div>
     </body>
 </html>
