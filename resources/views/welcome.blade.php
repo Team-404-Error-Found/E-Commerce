@@ -21,8 +21,8 @@
                 <img width="40px" height="40px" src="{{ asset('images/login img.png') }}" class=" p-2 rounded-lg" alt="loginimg">
                 <p class="flex justify-center items-center">Login</p>
             </div>
-            <div class="flex">
-                <img src="{{ asset('images/cart.png') }}" width="40px" height="30px" class="p-2 lg:text-2xl" onclick="location.href='{{route('cart')}}'" alt="cart">
+            <div class="flex" onclick="location.href='{{route('cart')}}'">
+                <img src="{{ asset('images/cart.png') }}" width="40px" height="30px" class="p-2 lg:text-2xl"  alt="cart">
                 <p class="justify-center items-center hidden lg:flex">Cart</p>
             </div>
             <div class="flex">
