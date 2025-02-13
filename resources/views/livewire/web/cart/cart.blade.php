@@ -1,3 +1,3 @@
 <div>
-    the cart page
+    This is cart page
 </div>
