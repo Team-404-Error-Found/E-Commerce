@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     @vite(['resources/css/app.css'])
+
 </head>
 <body>
 <header class="flex justify-between items-center p-4">
@@ -21,8 +22,8 @@
                 <img width="40px" height="40px" src="{{ asset('images/login img.png') }}" class=" p-2 rounded-lg" alt="loginimg">
                 <p class="flex justify-center items-center">Login</p>
             </div>
-            <div class="flex" onclick="location.href='{{route('cart')}}'">
-                <img src="{{ asset('images/cart.png') }}" width="40px" height="30px" class="p-2 lg:text-2xl"  alt="cart">
+            <div class="flex">
+                <img src="{{ asset('images/cart.png') }}" width="40px" height="30px" class="p-2 lg:text-2xl" onclick="location.href='{{route('cart')}}'" alt="cart">
                 <p class="justify-center items-center hidden lg:flex">Cart</p>
             </div>
             <div class="flex">
@@ -106,8 +107,49 @@
             </div>
         </div>
 
+        </div>
     </div>
+    {{--Beauty, Food, Toys and More section--}}
+    <div class="mt-4">
+        <h1 class="text-xl font-bold m-2 ml-4">Beauty, Food, Toys and More</h1>
+        <div class="block md:flex gap-3 w-full overflow-x-auto">
+            <div class="flex w-full md:w-[200px] border-b-2 border-gray rounded-md flex-none md:block cursor-pointer">
+                <img src="{{asset('images/camera.png')}}" class="w-[70px] md:w-[150px] lg:w-[200px] sm:mx-4 md:mx-auto" alt="electronics">
+                <div class="block my-auto ml-5 md:ml-0 md:!my-3">
+                    <p class="md:text-center md:mx-auto overflow-hidden w-3/4 truncate">Product Name</p>
+                    <p class="md:text-center"><b>Price</b></p>
+                </div>
+            </div>
 
-</div>
+        </div>
+    </div>
+{{--    Home Decor and Furnitures--}}
+    <div class="mt-4">
+        <h1 class="text-xl font-bold m-2 ml-4">Decor and Furnitures</h1>
+        <div class="block md:flex gap-3 w-full overflow-x-auto">
+            <div class="flex w-full md:w-[200px] border-b-2 border-gray rounded-md flex-none md:block cursor-pointer">
+                <img src="{{asset('images/camera.png')}}" class="w-[70px] md:w-[150px] lg:w-[200px] sm:mx-4 md:mx-auto" alt="electronics">
+                <div class="block my-auto ml-5 md:ml-0 md:!my-3">
+                    <p class="md:text-center md:mx-auto overflow-hidden w-3/4 truncate">Product Name</p>
+                    <p class="md:text-center"><b>Price</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+{{--    Fashion Top Deals section--}}
+    <div class="mt-4">
+        <h1 class="text-xl font-bold m-2 ml-4">Fashion Top Deals</h1>
+        <div class="block md:flex gap-3 w-full overflow-x-auto ">
+            <div class="flex w-full md:w-[200px] border-b-2 border-gray rounded-md flex-none md:block cursor-pointer">
+                <img src="{{asset('images/camera.png')}}" class="w-[70px] md:w-[150px] lg:w-[200px] sm:mx-4 md:mx-auto" alt="electronics">
+                <div class="block my-auto ml-5 md:ml-0 md:!my-3">
+                    <p class="md:text-center md:mx-auto overflow-hidden w-3/4 truncate">Product Name</p>
+                    <p class="md:text-center"><b>Price</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <x-layouts.footer />
 </body>
 </html>

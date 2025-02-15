@@ -1,5 +1,7 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 
+import tailwind_scrollbar_hide from "tailwind-scrollbar-hide";
+
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
