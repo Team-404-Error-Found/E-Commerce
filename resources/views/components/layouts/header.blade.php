@@ -1,4 +1,4 @@
-<header class="flex justify-between items-center p-4">
+<header class="flex justify-between items-center p-4 bg-white">
     <div class="flex">
         {{--            <img src="{{ asset('images/menu.png') }}" width="30px" height="30px" alt="menu">--}}
         <h2 class="ml-2 md:text-lg lg:text-xl">Flipkart Clone</h2>

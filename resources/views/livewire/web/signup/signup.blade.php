@@ -9,7 +9,7 @@
             <p class="text-blue-600 text-[30px] font-bold px-3 py-2 text-center">Sign up</p>
             <input type="text" placeholder="Enter Email/Mobile Number" class="p-2 border-b-2 border-black focus:border-gray outline-none mt-2 mb-5 w-[90%] block mx-auto"/>
             <p class="text-sm p-2 mx-3">By Countinuing, you agree to Flipkart's <a href="#" class="text-blue-600">Terms of Use</a> and <a href="#" class="text-blue-600">Privacy Policy</a></p>
-            <button type="submit" class="bg-orange-500 mt-2 text-white w-[90%] p-2 block mx-auto">CONTINUE</button>
+            <button type="submit" class="bg-orange-500 mt-2 text-white w-[90%] p-2 block mx-auto">Continue</button>
             <div class="h-[230px] flex flex-col justify-end">
                 <a href="{{route('login')}}" class="text-blue-600 text-center block p-4">Existing User? Log in</a>
             </div>

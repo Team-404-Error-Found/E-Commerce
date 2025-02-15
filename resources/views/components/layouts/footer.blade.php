@@ -7,7 +7,7 @@
     <div class="grid text-start grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-y-6 gap-x-2 text-sm">
         <div class="block">
             <p class="font-bold mb-3">ABOUT</p>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="{{ route('contact') }}">Contact Us</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="">Careers</a></li>
             <li><a href="">Flipkart Stories</a></li>

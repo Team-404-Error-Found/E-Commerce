@@ -9,10 +9,10 @@
     @vite(['resources/css/app.css'])
 
 </head>
-<body>
+<body class="bg-gray-100">
     <x-layouts.header/>
     {{--    Categories list--}}
-    <div class="w-max-full overflow-x-auto hide-scrollbar flex justify-center">
+    <div class="w-max-full overflow-x-auto hide-scrollbar flex justify-center bg-white m-4">
         <div class="grid grid-flow-col auto-cols-min place-items-center gap-2 mt-4 overflow-auto">
             <div class="min-w-[150px] cursor-pointer">
                 <img width="50px" height="50px" class="block mx-auto" src="{{ asset('images/kilos.png') }}" alt="kilos img">
