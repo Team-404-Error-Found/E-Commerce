@@ -13,3 +13,4 @@ Route::get('/', function () {
 Route::get('/cart', Cart::class)->name('cart');
 Route::get('/login',Login::class)->name('login');
 Route::get('/signup', Signup::class)->name('signup');
+Route::post('/signup', Signup::class)->name('signup');
